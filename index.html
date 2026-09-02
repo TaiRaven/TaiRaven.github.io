@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>William Wood — ServiceNow Developer</title>
+  <meta name="description" content="William Wood — ServiceNow developer building scoped apps with the Fluent/now-sdk framework." />
+  <style>
+    :root {
+      --bg: #f6f6f4;
+      --card: #ffffff;
+      --text: #17171a;
+      --muted: #63636b;
+      --accent: #2f6df6;
+      --accent-2: #8a5cf6;
+      --border: #e6e6e1;
+      --tag-bg: #eef2ff;
+      --tag-text: #3452c4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e12;
+        --card: #17171d;
+        --text: #f1f1f3;
+        --muted: #9a9aa4;
+        --accent: #6f9bff;
+        --accent-2: #a986ff;
+        --border: #26262e;
+        --tag-bg: #1b2040;
+        --tag-text: #a9baff;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Hero */
+    header {
+      padding: 88px 0 56px;
+      text-align: center;
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 26px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      letter-spacing: -0.5px;
+    }
+    .tagline {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .cta {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: var(--card);
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      border-color: transparent;
+    }
+
+    /* Sections */
+    section { padding: 40px 0; border-top: 1px solid var(--border); }
+    h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      margin: 0 0 20px;
+      font-weight: 700;
+    }
+    .about p { font-size: 17px; margin: 0 0 16px; }
+
+    /* Projects */
+    .project {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .project:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .project h3 { margin: 0 0 6px; font-size: 19px; }
+    .project h3 a { color: var(--text); text-decoration: none; }
+    .project h3 a:hover { color: var(--accent); }
+    .project p { margin: 0 0 14px; color: var(--muted); font-size: 15.5px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+    }
+
+    /* Skills */
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill {
+      padding: 7px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      background: var(--card);
+    }
+
+    /* Footer */
+    footer {
+      padding: 48px 0 64px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    .social { display: flex; gap: 20px; justify-content: center; margin-bottom: 18px; flex-wrap: wrap; }
+    .social a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 15px; }
+    .social a:hover { color: var(--accent); }
+    .copyright { color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="avatar">WW</div>
+      <h1>William Wood</h1>
+      <p class="tagline">ServiceNow Developer · Scoped apps with Fluent / now-sdk · Australia</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="https://www.linkedin.com/in/willrwood/">LinkedIn</a>
+        <a class="btn" href="https://github.com/TaiRaven">GitHub</a>
+      </div>
+    </header>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I'm a solo ServiceNow developer building scoped applications on the Fluent /
+        now-sdk framework. I work end to end &mdash; requirements, data model, and the
+        build &mdash; with a focus on doing it cleanly: proper CMDB and CSDM structure,
+        sensible governance, and code that stays readable.
+      </p>
+      <p>
+        Outside the platform I tinker with tools that keep my own work organised, from
+        Obsidian themes to Dataview dashboards. This page is the front door &mdash; the
+        projects below are what I've been building.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>ServiceNow Fluent Apps</h3>
+        <p>
+          Scoped applications built with the Fluent / now-sdk framework on the Australia
+          release &mdash; data models, business rules, and Service Portal front ends,
+          delivered solo from requirements through to deploy.
+        </p>
+        <div class="tags">
+          <span class="tag">ServiceNow</span>
+          <span class="tag">Fluent / now-sdk</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">CMDB / CSDM</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3><a href="https://github.com/TaiRaven/Unknown-Space-Nine">Unknown Space Nine</a></h3>
+        <p>
+          A custom Obsidian theme &mdash; a full visual overhaul for my note-taking
+          vault, version-controlled and published on GitHub.
+        </p>
+        <div class="tags">
+          <span class="tag">Obsidian</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Theme design</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Vault Dashboards</h3>
+        <p>
+          Live Dataview dashboards inside Obsidian that pull notes together into one
+          view &mdash; turning a pile of markdown into something you can actually read
+          at a glance.
+        </p>
+        <div class="tags">
+          <span class="tag">Obsidian</span>
+          <span class="tag">Dataview</span>
+          <span class="tag">Knowledge management</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>What I work with</h2>
+      <div class="skills">
+        <span class="skill">ServiceNow</span>
+        <span class="skill">Fluent / now-sdk</span>
+        <span class="skill">TypeScript</span>
+        <span class="skill">Service Portal</span>
+        <span class="skill">CMDB &amp; CSDM</span>
+        <span class="skill">APM</span>
+        <span class="skill">GlideRecord scripting</span>
+        <span class="skill">HTML &amp; CSS</span>
+        <span class="skill">Git</span>
+        <span class="skill">Obsidian</span>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social">
+        <a href="https://github.com/TaiRaven">GitHub</a>
+        <a href="https://www.linkedin.com/in/willrwood/">LinkedIn</a>
+      </div>
+      <div class="copyright">&copy; 2026 William Wood · Built with a single HTML file on GitHub Pages</div>
+    </footer>
+
+  </div>
+</body>
+</html>
