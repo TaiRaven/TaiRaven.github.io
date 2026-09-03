@@ -71,7 +71,7 @@ window.SITE = {
     { k: "Experience", v: "5 years" },                   // [REAL]
     { k: "Platform",   v: "ServiceNow · Fluent/now-sdk" }, // [REAL]
     { k: "Also",       v: "TypeScript, GlideRecord, REST, JavaScript, HTML" }, // [REAL]
-    { k: "Focus",      v: "Scoped apps, CMDB/CSDM" }        // [REAL]
+    { k: "Focus",      v: "Solutions Design, Platform Architecture, Development, CMDB/CSDM" }        // [REAL]
   ],
 
   /* ---- 02 How I work ------------------------------------------------------ */
