@@ -69,15 +69,15 @@ window.SITE = {
   facts: [
     { k: "Based",      v: "Hampshire, UK" },                 // [REAL]
     { k: "Experience", v: "5 years" },                   // [REAL]
-    { k: "Platform",   v: "ServiceNow · Fluent / now-sdk" }, // [REAL]
+    { k: "Platform",   v: "ServiceNow · Fluent/now-sdk" }, // [REAL]
     { k: "Also",       v: "TypeScript, GlideRecord, REST, JavaScript, HTML" }, // [REAL]
-    { k: "Focus",      v: "Scoped apps, CMDB / CSDM" }        // [REAL]
+    { k: "Focus",      v: "Scoped apps, CMDB/CSDM" }        // [REAL]
   ],
 
   /* ---- 02 How I work ------------------------------------------------------ */
   principles: [
     { no: "01", title: "Logic as data, not script",  body: "If a rule will change, it belongs in a table a service owner can edit. Scripts are for behaviour, not for policy." },
-    { no: "02", title: "Upgrade-safe by default",    body: "I stay out of the out-of-box tables where I can. Every customization gets a note saying why it exists and what would let us delete it." },
+    { no: "02", title: "Upgrade-safe by default",    body: "I stay out of the out-of-box tables where I can. Every customisation gets a note saying why it exists and what would let us delete it." },
     { no: "03", title: "Never overwrite silently",   body: "Integrations write to a review queue when sources disagree. A wrong record you can see beats a wrong record you can't." },
     { no: "04", title: "Map the process first",      body: "Most requirements describe the workaround, not the need. I sit with the people doing the work before writing anything." }
   ],
@@ -92,7 +92,7 @@ window.SITE = {
   // [EXAMPLE] Put your real certs here, or delete every block to hide the column.
   certs: [
     { short: "CSA", title: "Zurich - Certified Platform Admin", year: "2026" },
-    { short: "CIS-DF", title: "Certified Implementation Specalist - Data Foundationd", year: "2025" }
+    { short: "CIS-DF", title: "Certified Implementation Specialist - Data Foundation", year: "2025" }
   ],
 
   /* ---- 04 Selected work --------------------------------------------------- */
@@ -191,7 +191,7 @@ window.SITE = {
   // [EXAMPLE] Your job history. Fill in or delete blocks. Delete all to hide.
   jobs: [
     { years: "2025 — present", role: "Senior ServiceNow Developer", org: "Baringa",
-      note: "I design and build scoped ServiceNow applications for clients, taking requirements through to deployed, production-ready solutions." },
+      note: "I design and build scoped ServiceNow solutions, taking requirements through to deployed, production-ready deliverables." },
     { years: "2023 — 2025", role: "ServiceNow CMDB Administrator", org: "Carnival UK",
       note: "Leading CMDB design and implementation across a fleet of Cruise liners." }
   ],
@@ -207,7 +207,7 @@ window.SITE = {
   now: [                                    // [EXAMPLE] what you're doing this quarter
     "Building the sn-mcp ServiceNow MCP server.",
     "Shipping scoped apps on the Fluent/now-sdk framework.",
-    "Experimenting with Coding agents and MCP connetions on the Now platform",
+    "Experimenting with Coding agents and MCP connections on the Now platform",
     "Keeping the Unknown Space Nine Obsidian theme up to date."
   ],
   nowLead: "What I'm working on right now, updated when it changes.",
