@@ -35,11 +35,11 @@ window.SITE = {
   },
 
   /* ---- Identity (sidebar + hero) ------------------------------------------ */
-  name: "William Wood",                    // [REAL]
-  role: "ServiceNow Developer",            // [REAL]
+  name: "Will Wood",                    // [REAL]
+  role: "Snr ServiceNow Developer",            // [REAL]
 
   // The big line at the top. Your positioning in one sentence.
-  headline: "I build ServiceNow applications that hold up after go-live.", // [REAL-ish, edit to taste]
+  headline: "I design and build solutions and apps with the end user in mind", // [REAL-ish, edit to taste]
 
   // The smaller line under the headline.
   introSub: "Scoped applications on the Fluent / now-sdk framework, Service Portal front ends, clean CMDB and CSDM structure, and the data cleanup nobody puts on a roadmap.", // [REAL]
@@ -48,17 +48,16 @@ window.SITE = {
   portrait: "",                            // [EXAMPLE] leave "" for a placeholder tile
 
   // Status pill in the sidebar. Set to "" to hide it.
-  status: "",                              // [EXAMPLE] e.g. "Open to work" — only if true
+  status: "Not open to work",                              // [EXAMPLE] e.g. "Open to work" — only if true
 
   resumeUrl: "",                           // [EXAMPLE] link to a PDF, or "" to hide
 
   /* ---- Stat row under the hero -------------------------------------------- */
-  // [EXAMPLE] These numbers are made up. Replace with real ones or delete blocks.
   receipts: [
     { v: "4+",  k: "years on platform" },
-    { v: "x",   k: "instances worked" },
-    { v: "x",   k: "scoped apps shipped" },
-    { v: "x",   k: "users served" }
+    { v: "10+",   k: "instances worked" },
+    { v: "3",   k: "scoped apps shipped" },
+    { v: "1000+",   k: "users served" }
   ],
 
   /* ---- 01 About ----------------------------------------------------------- */
@@ -68,10 +67,10 @@ window.SITE = {
   ],
   // Side table of quick facts.
   facts: [
-    { k: "Based",      v: "Your city" },                 // [EXAMPLE]
-    { k: "Experience", v: "x years" },                   // [EXAMPLE]
+    { k: "Based",      v: "Hampshire, UK" },                 // [REAL]
+    { k: "Experience", v: "5 years" },                   // [REAL]
     { k: "Platform",   v: "ServiceNow · Fluent / now-sdk" }, // [REAL]
-    { k: "Also",       v: "TypeScript, GlideRecord, REST" }, // [REAL]
+    { k: "Also",       v: "TypeScript, GlideRecord, REST, JavaScript, HTML" }, // [REAL]
     { k: "Focus",      v: "Scoped apps, CMDB / CSDM" }        // [REAL]
   ],
 
@@ -85,15 +84,15 @@ window.SITE = {
 
   /* ---- 03 Stack & certifications ------------------------------------------ */
   skillGroups: [                            // [REAL]
-    { label: "Platform", items: ["Fluent / now-sdk", "Scoped applications", "Service Portal", "CMDB", "CSDM", "APM", "Flow Designer", "Update Sets"] },
-    { label: "Modules",  items: ["ITSM", "CMDB / CSDM", "APM", "Service Catalog"] },
-    { label: "Code",     items: ["TypeScript", "Server-side JS", "GlideRecord", "Client scripts", "REST / SOAP", "Git"] },
+    { label: "Platform", items: ["Fluent/now-sdk", "Scoped applications", "Service Portal", "CMDB", "CSDM", "APM", "Flow Designer", "Update Sets"] },
+    { label: "Modules",  items: ["ITSM", "CMDB/CSDM", "APM", "Service Catalog/Employee Centre", "ITOM", "CSM"] },
+    { label: "Code",     items: ["JavaScript", "Server-side JS", "GlideRecord", "Client scripts", "REST/SOAP", "Git"] },
     { label: "Practice", items: ["Process mapping", "Requirements workshops", "Upgrade-safe config", "Governance", "Code review"] }
   ],
   // [EXAMPLE] Put your real certs here, or delete every block to hide the column.
   certs: [
-    { short: "CSA", title: "Your certification — edit in content.js", year: "20XX" },
-    { short: "CAD", title: "Another certification", year: "20XX" }
+    { short: "CSA", title: "Zurich - Certified Platform Admin", year: "2026" },
+    { short: "CIS-DF", title: "Certified Implementation Specalist - Data Foundationd", year: "2025" }
   ],
 
   /* ---- 04 Selected work --------------------------------------------------- */
@@ -214,8 +213,8 @@ window.SITE = {
 
   /* ---- 09 Contact --------------------------------------------------------- */
   contact: {
-    headline: "Let's talk.",                // the big contact line
-    email: "",                              // [REAL] left blank on purpose (no public email)
+    headline: "Let's connect.",                // the big contact line
+    email: "willrwood96@gmail.com",                              // [REAL] left blank on purpose (no public email)
     links: [                                // [REAL]
       { label: "GitHub",   href: "https://github.com/TaiRaven" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/willrwood/" }
