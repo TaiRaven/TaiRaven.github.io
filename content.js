@@ -26,9 +26,9 @@ window.SITE = {
     principles: true,
     stack:      true,
     work:       true,
-    study:      true,   // the case-study / interactive demo
+    study:      false,   
     experience: true,
-    writing:    true,
+    writing:    false,
     now:        true,
     contact:    true,
     intro:      true
@@ -190,10 +190,10 @@ window.SITE = {
   /* ---- 06 Experience ------------------------------------------------------ */
   // [EXAMPLE] Your job history. Fill in or delete blocks. Delete all to hide.
   jobs: [
-    { years: "20XX — present", role: "Your role", org: "Your employer",
-      note: "One or two lines on what you own and what you've shipped." },
-    { years: "20XX — 20XX", role: "Earlier role", org: "Earlier employer",
-      note: "What you did there, in plain language." }
+    { years: "2025 — present", role: "Senior ServiceNow Developer", org: "Baringa",
+      note: "I design and build scoped ServiceNow applications for clients, taking requirements through to deployed, production-ready solutions." },
+    { years: "2023 — 2025", role: "ServiceNow CMDB Administrator", org: "Carnival UK",
+      note: "Leading CMDB design and implementation across a fleet of Cruise liners." }
   ],
 
   /* ---- 07 Writing & community --------------------------------------------- */
@@ -206,7 +206,8 @@ window.SITE = {
   /* ---- 08 Now ------------------------------------------------------------- */
   now: [                                    // [EXAMPLE] what you're doing this quarter
     "Building the sn-mcp ServiceNow MCP server.",
-    "Shipping scoped apps on the Fluent / now-sdk framework.",
+    "Shipping scoped apps on the Fluent/now-sdk framework.",
+    "Experimenting with Coding agents and MCP connetions on the Now platform",
     "Keeping the Unknown Space Nine Obsidian theme up to date."
   ],
   nowLead: "What I'm working on right now, updated when it changes.",
