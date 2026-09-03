@@ -45,7 +45,7 @@ window.SITE = {
   introSub: "Scoped applications on the Fluent / now-sdk framework, Service Portal front ends, clean CMDB and CSDM structure, and the data cleanup nobody puts on a roadmap.", // [REAL]
 
   // Portrait image. Put a file called portrait.jpg next to index.html, or set "".
-  portrait: "portrait.jpg",                // [REAL] photo file sits next to index.html
+  portrait: "Will Wood2.png",                // [REAL] photo file sits next to index.html
 
   // Status pill in the sidebar. Set to "" to hide it.
   status: "Not open to work",                              // [EXAMPLE] e.g. "Open to work" — only if true
