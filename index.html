@@ -49,18 +49,22 @@
 
   var MONO = "'JetBrains Mono', monospace";
 
-  /* ---- Decide which sections are present, and number them ---- */
+  /* ---- Decide which sections are present, and number them ----
+     A section shows only if it has content AND it isn't switched off in
+     content.js. Set SITE.sections.<id> = false to hide one while keeping
+     its content in the file. (caseStudy.show is still honoured as an alias.) */
+  var secOn = function (id) { return !S.sections || S.sections[id] !== false; };
   var defs = [
-    { id: "intro",      label: "Intro",       on: true },
-    { id: "about",      label: "About",       on: has(S.about) },
-    { id: "principles", label: "Principles",  on: has(S.principles) },
-    { id: "stack",      label: "Stack",       on: has(S.skillGroups) },
-    { id: "work",       label: "Work",        on: has(S.projects) },
-    { id: "study",      label: "Case study",  on: S.caseStudy && S.caseStudy.show },
-    { id: "experience", label: "Experience",  on: has(S.jobs) },
-    { id: "writing",    label: "Writing",     on: has(S.posts) },
-    { id: "now",        label: "Now",         on: has(S.now) },
-    { id: "contact",    label: "Contact",     on: true }
+    { id: "intro",      label: "Intro",       on: secOn("intro") },
+    { id: "about",      label: "About",       on: has(S.about) && secOn("about") },
+    { id: "principles", label: "Principles",  on: has(S.principles) && secOn("principles") },
+    { id: "stack",      label: "Stack",       on: has(S.skillGroups) && secOn("stack") },
+    { id: "work",       label: "Work",        on: has(S.projects) && secOn("work") },
+    { id: "study",      label: "Case study",  on: !!S.caseStudy && secOn("study") && (S.caseStudy.show !== false) },
+    { id: "experience", label: "Experience",  on: has(S.jobs) && secOn("experience") },
+    { id: "writing",    label: "Writing",     on: has(S.posts) && secOn("writing") },
+    { id: "now",        label: "Now",         on: has(S.now) && secOn("now") },
+    { id: "contact",    label: "Contact",     on: secOn("contact") }
   ];
   var active = defs.filter(function (d) { return d.on; }).map(function (d, i) {
     d.no = String(i).padStart(2, "0"); return d;

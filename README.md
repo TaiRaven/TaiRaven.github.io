@@ -17,10 +17,21 @@ Labels in `content.js`:
 - `[REAL]` — already your real details.
 - `[EXAMPLE]` — placeholder/sample. **Make it true or delete it before publishing.**
 
-### Sections turn off when empty
-Delete every item in a list and that whole section disappears (nav number too).
-So if you don't want a "Writing" section, delete the `posts` blocks. Same for
-`jobs` (Experience), `certs` (Certifications), and the case study (`caseStudy.show: false`).
+### Turn a section on or off
+At the top of `content.js` there's a `sections` block. Set any to `false` to
+hide that section and its sidebar link — the content stays in the file, just
+hidden. Set it back to `true` to bring it back. The sidebar numbers renumber
+themselves.
+
+```
+sections: {
+  writing: false,   // hides the Writing section but keeps the posts below
+  ...
+}
+```
+
+A section also disappears on its own if you delete all of its content (e.g.
+remove every `posts` block and Writing vanishes).
 
 ### Add a portrait photo
 Put a file named `portrait.jpg` next to `index.html`, then set

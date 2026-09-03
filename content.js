@@ -16,6 +16,24 @@
 
 window.SITE = {
 
+  /* ---- Turn whole sections ON / OFF --------------------------------------
+     Set any to false to hide that section AND its sidebar link, without
+     deleting its content below. The numbers in the sidebar renumber
+     automatically. Set back to true to bring it back. Intro and Contact are
+     usually left on, but you can hide them too.                              */
+  sections: {
+    about:      true,
+    principles: true,
+    stack:      true,
+    work:       true,
+    study:      true,   // the case-study / interactive demo
+    experience: true,
+    writing:    true,
+    now:        true,
+    contact:    true,
+    intro:      true
+  },
+
   /* ---- Identity (sidebar + hero) ------------------------------------------ */
   name: "William Wood",                    // [REAL]
   role: "ServiceNow Developer",            // [REAL]
@@ -97,9 +115,8 @@ window.SITE = {
   /* ---- 05 Case study / interactive demo ----------------------------------
      The interactive routing widget below is a DEMO of a ServiceNow pattern.
      The framing text is [EXAMPLE] — rewrite it as a real project of yours, or
-     set caseStudy.show to false to hide the whole section.                    */
+     hide the whole section with sections.study = false at the top of this file. */
   caseStudy: {
-    show: true,
     kicker: "Interactive demo",
     title: "Routing rules as data, not script",
     meta: "An example of a pattern I use · not a specific engagement", // [EXAMPLE] rewrite for a real project
