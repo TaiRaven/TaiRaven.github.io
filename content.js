@@ -70,7 +70,7 @@ window.SITE = {
     { k: "Based",      v: "Hampshire, UK" },                 // [REAL]
     { k: "Experience", v: "5 years" },                   // [REAL]
     { k: "Platform",   v: "ServiceNow · Fluent/now-sdk" }, // [REAL]
-    { k: "Also",       v: "TypeScript, GlideRecord, REST, JavaScript, HTML" }, // [REAL]
+    { k: "Also",       v: "JavaScript, HTML, REST, GlideScript" }, // [REAL]
     { k: "Focus",      v: "Solutions Design, Platform Architecture, Development, CMDB/CSDM" }        // [REAL]
   ],
 
