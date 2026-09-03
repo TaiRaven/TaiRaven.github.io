@@ -37,6 +37,13 @@ remove every `posts` block and Writing vanishes).
 Put a file named `portrait.jpg` next to `index.html`, then set
 `portrait: "portrait.jpg"` in `content.js`. Leave it `""` for the placeholder tile.
 
+### Change the browser-tab icon (favicon)
+Set `favicon` in `content.js`:
+- `"WW"` — your initials, lime on a dark tile (no file needed)
+- `"⚡"` — any emoji
+- `"favicon.png"` — an image file you drop next to `index.html`
+- `""` — the browser's default icon
+
 ## How to publish a change
 
 From this folder, in a terminal:

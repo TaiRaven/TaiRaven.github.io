@@ -52,6 +52,13 @@ window.SITE = {
 
   resumeUrl: "",                           // [EXAMPLE] link to a PDF, or "" to hide
 
+  // Browser-tab icon. Options:
+  //   "WW"            -> your initials, lime on a dark tile (no file needed)
+  //   "⚡"            -> any emoji
+  //   "favicon.png"   -> an image file you drop next to index.html
+  //   ""              -> the browser's default icon
+  favicon: "WW",                           // [REAL]
+
   /* ---- Stat row under the hero -------------------------------------------- */
   receipts: [
     { v: "4+",  k: "years on platform" },
